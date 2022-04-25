@@ -31,3 +31,4 @@ def func(tup : Tuple6[Int, String, String, Int, Int,Int]) = {
 println("Ordering of players based on their rank")
 val res = l.map(tuple=> func(tuple)).sortBy(_._4)(Ordering[Double].reverse)
 res.foreach(println)
+
